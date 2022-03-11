@@ -6,7 +6,7 @@
 			*{
 			margin: 0;
 			padding: 0;
-			font-family: Century Gothic;
+			font-family: 'Lora', serif;
 		}
 		ul{
 			float: right;
@@ -37,10 +37,7 @@
 			left: 50%;
 			transform: translate(-50%,-50%);	
 		}
-		.title h1{
-			color: #fff;
-			font-size: 70px;
-		}
+		
 		body{
 			background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(plane.jpg);
 			height: 100vh;
@@ -64,6 +61,8 @@
 			padding: 10px 30px;
 			text-decoration: none;
 			transition: 0.6s ease;
+            border-radius: 20px;
+            border: 3px solid #00FFFF;
 		}
 		input[type=submit]:hover{
 			background-color: #fff;
@@ -87,6 +86,10 @@
 		  border-radius: 4px;
 		  box-sizing: border-box;
 		}
+       .title h1{
+			color: #fff;
+			font-size: 30px;
+		}
 		</style>
 </head>
 <body>
@@ -94,8 +97,8 @@
 			<ul>
 				<li class="active"><a href="#">Passenger Details</a></li>
 			</ul>
-		</div>
-	<div class="title">
+    </div>
+    <div class="title">
 		<h1>PASSENGER DETAILS</h1>
 	</div>
 	<form action="postpassengerdetails.php" method="post">
@@ -141,10 +144,10 @@
 			</tr>
 			<tr>
 				<td>
-					Sex(M/F/O):
+					Gender(M/F/O):
 				</td>
 				<td>
-					<input type="text" placeholder="Sex" name="Sex" required>
+					<input type="text" placeholder="Gender" name="Sex" required>
 				</td>
 			</tr>
 			<tr>
