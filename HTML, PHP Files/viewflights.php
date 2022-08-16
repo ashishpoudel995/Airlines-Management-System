@@ -9,7 +9,7 @@ require_once "dbconnection.php";
 		*{
 			margin: 0;
 			padding: 0;
-			font-family: Century Gothic;
+			font-family: 'Lora', serif;
 		}
 		ul{
 			float: right;
@@ -42,7 +42,7 @@ require_once "dbconnection.php";
 		}
 		.title h1{
 			color: #fff;
-			font-size: 70px;
+			font-size: 30px;
 		}
 		body{
 			background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(plane.jpg);
@@ -83,7 +83,7 @@ require_once "dbconnection.php";
 			</ul>
 		</div>
 	<div class="title">
-		<h1>All Flights</h1>
+		<h1>ALL FLIGHTS</h1>
 	</div>
 	<table class="a">
 		<tr>

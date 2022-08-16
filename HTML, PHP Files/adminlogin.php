@@ -67,7 +67,7 @@
 		}
 		.title h1{
 			color: #fff;
-			font-size: 70px;
+			font-size: 50px;
 		}
 		table.a{
 			position: absolute;
@@ -86,6 +86,9 @@
 			padding: 10px 30px;
 			text-decoration: none;
 			transition: 0.6s ease;
+            border-radius: 20px;
+            border: 3px solid #00FFFF;
+            background-color:azure;
 		}
 		input[type=submit]:hover{
 			background-color: #fff;

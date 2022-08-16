@@ -45,13 +45,16 @@
 			*{
 			margin: 0;
 			padding: 0;
-			font-family: Century Gothic;
+			font-family: 'Lora', serif;
 			}
 			ul{
 			float: right;
 			list-style-type: none;
 			margin-top: 25px;
 			}
+            ul li{
+			   display: inline-block;
+		    }
 			ul li a{
 				text-decoration: none;
 				color: #fff;
@@ -66,12 +69,6 @@
 			ul li.active a{
 				background-color: #fff;
 				color: #000;
-			}
-			.choices{
-			position: absolute;
-			top: 95%;
-			left: 50%;
-			transform: translate(-50%,-50%);
 			}
 			.a1{
 				border: 1px solid #fff;
@@ -95,7 +92,7 @@
 				left: 40%;
 				top: 5%;
 				color: #fff;
-				font-size: 40px;
+				font-size: 30px;
 			}
 			div.b{
 				border: 1px solid #fff;
@@ -108,15 +105,29 @@
 				transform: translate(-50%,-50%);
 				font-size: 23px;
 			}
+            div.print{
+            font-size: 5px;
+            position: absolute;
+			top: 95%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+            border-radius: 10px;
+            }
+            .a h1
+            {
+            text-align: center;
+            font-size: 30px;
+            }
 	</style>
 </head>
 <body>
 	<div class="main">
 			<ul>
-				<li class="active"><a href="#">E-Ticket</a></li>
+                <li class="active"><a href="#">E-Ticket</a></li>
+				<li><a href="homepage.html">Home</a></li>
 			</ul>
-		</div>
-	<div class="a"><h1>E-Ticket:</h1></div>
+    </div>
+	<div class="a"><h1>E-Ticket</h1></div>
 	<div class="b">
 		<?php echo "First Name  :".$fname ?></br>
 		<?php echo "Last Name  :".$lname ?></br>
@@ -137,8 +148,8 @@
 		<?php echo "Flight Code  :".$flight ?></br>
 		<?php echo "Ticket Number  :".$ticketno ?></br>
 	</div>
-	<div class="choices" >
-			<a href="homepage.html" class="a1">Home</a>
-	</div>
+    <div class="print">
+         <button onclick="window.print()"><h1>Print Ticket</h1></button>
+    </div>
 </body>
 </html>

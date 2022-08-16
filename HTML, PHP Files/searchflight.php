@@ -42,7 +42,7 @@
 		*{
 			margin: 0;
 			padding: 0;
-			font-family: Century Gothic;
+			font-family: 'Lora', serif;
 		}
 		ul{
 			float: right;
@@ -75,7 +75,7 @@
 		}
 		.title h1{
 			color: #fff;
-			font-size: 70px;
+			font-size: 30px;
 		}
 		body{
 			background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(plane.jpg);
@@ -84,16 +84,20 @@
 			background-position: center;
 		}
 		table.a{
-			position: absolute;
-			top: 27%;
-			left: 20%;
-			/*transform: translate(-50%,-50%);*/
+            position: absolute;
+			top: 20%;
+            bottom: 20%;
+			transform: translate(-20%,-20%);
 			border: 1px solid #fff;
-			padding: 10px 30px;
+			padding: 5px 5px;
+            padding-top: 50px;
 			color: #fff;
 			text-decoration: none;
 			transition: 0.6s ease;
-			font-size: 20px;
+			font-size: 25px;
+            margin-top: 100px;
+            margin-left: 300px;
+            margin-right: -250px;	
 		}
 		button[type="submit"]{
 			border: 1px solid #fff;

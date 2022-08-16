@@ -1,7 +1,9 @@
 <?php 
-$con=mysqli_connect('localhost','root','','dbms');
-if(mysqli_connect_errno($con))
+$con=mysqli_connect("localhost", "root","","dbms");
+if ($con->connect_error) 
 {
-	die("Connection error");
- }
- ?>
+  die("Connection failed: " . $con->connect_error);
+}
+ 
+?>
+

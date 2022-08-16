@@ -6,7 +6,7 @@
 		*{
 			margin: 0;
 			padding: 0;
-			font-family: Century Gothic;
+			font-family: 'Lora', serif;
 		}
 		ul{
 			float: right;
@@ -19,7 +19,7 @@
 		ul li a{
 			text-decoration: none;
 			color: #fff;
-			padding: 5px 20px;
+			padding: 5px 5px;
 			border: 1px solid #fff;
 			transition: 0.6s ease;
 		}
@@ -39,31 +39,38 @@
 		}
 		.title h1{
 			color: #fff;
-			font-size: 70px;
+			font-size: 30px;
 		}
 		body{
 			background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(plane.jpg);
-			height: 100vh;
+			height: 120vh;
+            width:auto;
 			background-size: cover;
 			background-position: center;
 		}
 		table.a{
 			position: absolute;
-			top: 60%;
-			left: 50%;
-			transform: translate(-50%,-50%);
+			top: 20%;
+            bottom: 20%;
+			transform: translate(-20%,-20%);
 			border: 1px solid #fff;
-			padding: 10px 30px;
+			padding: 5px 5px;
+            padding-top: 50px;
 			color: #fff;
 			text-decoration: none;
 			transition: 0.6s ease;
 			font-size: 25px;
+            margin-top: 100px;
+            margin-left: 300px;
+            margin-right: -250px;
 		}
 		input[type=submit]{
 			border: 1px solid #fff;
 			padding: 10px 30px;
 			text-decoration: none;
 			transition: 0.6s ease;
+            border-radius: 20px;
+            border: 3px solid #00FFFF;
 		}
 		input[type=submit]:hover{
 			background-color: #fff;
@@ -96,6 +103,11 @@
 		  border-radius: 4px;
 		  box-sizing: border-box;
 		}	
+        div.b
+        {
+            margin-left: auto;
+            margin-right: auto;
+        }
 	</style>
 </head>
 <body>
@@ -107,55 +119,56 @@
 			</ul>
 	</div>
 	<div class="title">
-		<h1>Flight Details</h1>
+		<h1>FLIGHT DETAILS</h1>
 	</div>
 	<form action="postadmindetails.php" method="post">
-		<table class='a' cellspacing="30">
+    <div class="b">  
+		<table class='a' cellspacing="20">
 			<tr>
 				<td>Flight Code</td>
-				<td><input type="text" placeholder="Flight Code" name="flightcode" required></td>
+				<td><input type="text"  name="flightcode" required></td>
 				<td>Airlines ID</td>
-				<td><input type="text" placeholder="Airlines ID" name="airlinesid" required></td>
+				<td><input type="text"  name="airlinesid" required></td>
 				<td>Country</td>
-				<td><input type="text" placeholder="Country" name="country" required></td>
+				<td><input type="text"  name="country" required></td>
 				<td>State</td>
-				<td><input type="text" placeholder="State" name="state" required></td>
+				<td><input type="text" name="state" required></td>
 			</tr>
 			<tr>
 				<td>Airport Name</td>
-				<td><input type="text" placeholder="Airport Name" name="airportname" required></td>
+				<td><input type="text"  name="airportname" required></td>
 				<td>Source</td>
-				<td><input type="text" placeholder="Source" name="source" required></td>
+				<td><input type="text"  name="source" required></td>
 				<td>Destination</td>
-				<td><input type="text" placeholder="Destination" name="destination" required></td>
+				<td><input type="text"  name="destination" required></td>
 			</tr>
 			<tr>
 				<td>Departure</td>
-				<td><input type="text" placeholder="Departure" name="departure" required></td>
+				<td><input type="text" name="departure" required></td>
 				<td>Arrival</td>
-				<td><input type="text" placeholder="Arrival" name="arrival" required></td>
+				<td><input type="text" name="arrival" required></td>
 				<td>Duration</td>
-				<td><input type="text" placeholder="Duration" name="duration" required></td>
+				<td><input type="text"  name="duration" required></td>
 				<td>Date</td>
 				<td><input type="Date" name="date" required></td>
 			</tr>
-			<tr><td>Price:</td></tr>
+			<tr><td><h3>PRICE</h3></td></tr>
 			<tr>
 				<td>Economy Class</td>
 				<td>
-					<input type="number" placeholder="Economy" name="economyclass" required>
+					<input type="number" name="economyclass" required>
 				</td>
 				<td>Business Class</td>
 				<td>
-					<input type="number" placeholder="Business" name="businessclass" required>
+					<input type="number" name="businessclass" required>
 				</td>
 				<td>For Students</td>
 				<td>
-					<input type="number" placeholder="For Students" name="students" required>
+					<input type="number" name="students" required>
 				</td>
 				<td>For Differently Abled</td>
 				<td>
-					<input type="number" placeholder="For Differently Abled" name="diff" required>
+					<input type="number" name="diff" required>
 				</td>
 			</tr>
 			<tr>
@@ -164,5 +177,6 @@
 				</td>
 			</tr>
 		</table>
+    </div>  
 </body>
 </html>

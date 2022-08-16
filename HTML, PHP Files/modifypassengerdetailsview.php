@@ -71,7 +71,7 @@ if(isset($_POST['submit']))
 			*{
 			margin: 0;
 			padding: 0;
-			font-family: Century Gothic;
+			font-family: 'Lora', serif;
 		}
 		ul{
 			float: right;
@@ -199,7 +199,7 @@ if(isset($_POST['submit']))
 			</tr>
 			<tr>
 				<td>
-					Sex:
+					Gender:
 				</td>
 				<td>
 					<input type="text" placeholder=<?php echo $sex ?> name="Sex">
